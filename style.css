@@ -1,0 +1,1090 @@
+body{
+    font-family: "Inter", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+
+    width: 84%;
+    margin: auto;
+    overflow: hidden;
+}
+@media screen and (max-width:1200px){
+    .container
+    {
+        
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+ 
+  
+}
+
+header{
+    background-color:#0B9586 ;
+    padding: 16px 0px;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav img {
+    width: 157px;
+    height: 54px;
+    mix-blend-mode:multiply;
+}
+nav ul .active{
+    border-bottom: 3px solid #0000004D;
+    border-radius: 5px;
+    background: #0000000F;
+
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 18px;
+ 
+    padding: 8px 28px;
+}
+nav .nav-end p{
+ 
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 21.78px;
+    letter-spacing: 0.93px;
+    
+}
+nav .nav-end h4{
+
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.93px;
+text-align: left;
+
+}
+nav i{
+    font-size: xx-large;
+}
+
+@media screen and (max-width:992px){
+    nav ul ,nav .nav-end  {
+        display: none;
+    }
+  
+}
+
+
+/*solar-panel-info styles*/
+.solar-panel-info{
+    background-image: url('assets/solar-panels-meadow\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 650px;
+    width: 100%;
+}
+.solar-panel-info .info {
+    width:729px;
+    margin:32px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+ 
+    
+}
+.solar-panel-info .progress-bar {
+    display: flex;
+    column-gap:32px ;
+    align-items: center;
+    color: white;
+    margin: 70px 0;
+    
+}
+.solar-panel-info  .progress-bar .bar {
+    width: 220px;
+    background-color:#575757 ;
+    height: 3.75px;
+    position: relative;
+}
+.solar-panel-info  .progress-bar .bar::after{
+    content: '';
+    position: absolute;
+    width: 90px;
+    background-color: white;
+    height: 3.75px;
+    left: 0;
+    top: 0;
+}
+.solar-panel-info .info h1{
+
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 62.93px;
+    letter-spacing: -0.02em;
+
+}
+.solar-panel-info .info p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px; 
+}
+.solar-panel-info .info  .info-buttons{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.solar-panel-info .info .call-btn{
+    padding: 12px 34px;
+    border-radius: 109px;
+    background-color: #3CAB90;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.08em;
+}
+.solar-panel-info .info .request-call-btn{
+    padding: 12px 34px;
+    border-radius: 109px;
+    background-color: #FFBB1C;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.08em;
+    color: #2A3334;
+
+}
+
+@media screen and (max-width:992px){
+    .solar-panel-info .info {
+        width:80%;
+        margin:32px 0px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+     
+        
+    }
+  
+}
+@media screen and (max-width:576px){
+    .solar-panel-info .info {
+        width:95%;
+        
+    }
+    .solar-panel-info .info h1{
+        font-size:38px;
+    }
+    .solar-panel-info .info p{
+        font-size: 18px;
+    }
+}
+/*friendliest styles*/
+.friendliest{
+    padding: 80px 0;
+
+}
+.friendliest .row{
+    display: grid;
+    gap: 10px;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(12, 1fr);
+
+}
+.friendliest .row .friendliest-info{
+  
+    grid-column: span 5;
+}
+.friendliest .row .friendliest-info h2{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    color:#101828 ;
+    
+}
+.friendliest .row .friendliest-info p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475467;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.friendliest .row .friendliest-info .collaboration{
+    margin: 12px 0;
+    font-size: 20px;
+}
+.friendliest .row .friendliest-info .collaboration .collaboration-number{
+
+  
+    font-weight: 700;
+    line-height: 23.28px;
+    letter-spacing: 4px;
+    color:#84BD3A ;
+    margin-right: 10px;
+
+}
+.friendliest .row .friendliest-info .collaboration .collaboration-title{
+
+    font-weight: 600;
+    line-height: 30px;
+    color: #101828;
+}
+.friendliest .row .friendliest-banner{
+    grid-column: 7 / span 6;
+    text-align: center;
+}
+.friendliest .row .friendliest-banner .img-container{
+    position: relative;
+  
+    width: 518.52px;
+
+
+}
+.friendliest .row .friendliest-banner .energy-img{
+ 
+   position: absolute;
+   bottom: 25px;
+   left: -4%;
+  
+}
+
+@media screen and (max-width:992px){
+    .friendliest .row .friendliest-info{
+  
+        grid-column: span 12;
+    }
+
+    .friendliest .row .friendliest-banner{
+        grid-column: 1/span 11;
+        text-align: center;
+     
+        margin: 0px 20px;
+    }
+ 
+  
+}
+@media screen and (max-width:576px){
+    .friendliest .row .friendliest-info h2{
+        font-size: 30px;
+    }
+    .friendliest .row .friendliest-banner{
+        grid-column:span 12;
+      
+     
+        margin: 0px 20px;
+    }
+    .friendliest .row .friendliest-banner .img-container{
+        width: 100%;
+    }
+    .friendliest .row .friendliest-banner .solar-img{
+        width: 100%;
+    }
+    .friendliest .row .friendliest-banner .energy-img{
+       left: -5%;
+       width: 50%;
+    }
+
+}
+/*power section styles*/
+.power {
+    background-image: url('assets/8116\ 1.png');
+    background-repeat: no-repeat;
+    min-height: 505px;
+    background-position: center center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+
+}
+.power .power-content{
+    width: 678px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+.power .power-content h3{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    
+}
+.power .power-content p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    
+}
+.power .power-content .call-btn {
+    padding: 12px 34px;
+    gap: 10px;
+    border-radius:109px;
+    border: none;
+    background-color: #FFBB1C;
+    color: #2A3334;
+    width: 173px;
+}
+@media screen and (max-width:992px){
+    .power .power-content{
+        width: 80vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+}
+@media screen and (max-width:576px){
+    .power .power-content h3{
+        font-size: 32px;
+    }
+    .power .power-content p{
+        font-size: 17px;   
+    }
+}
+/*solar kit  styles*/
+.solar-kit {
+    padding: 80px 0px;
+}
+.solar-kit .head{
+    text-align: center;
+    width:  936px;
+    margin: auto;
+
+}
+.solar-kit .head h4{
+
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    color: #101828;
+
+}
+.solar-kit .head p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #475467;
+    margin-top: 24px;
+
+}
+.solar-kit .content{
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    column-gap: 32px;
+    margin-top: 40px;
+}
+.solar-kit .content .card{
+    /* height: 554px; */
+    /* width: 358.67px; */
+    box-shadow: 0px 4px 30px 0px #0000000D;
+
+
+}
+.solar-kit .content .card .card-header{
+ 
+    height: 240px;
+    /* width:358.67px ; */
+}
+.solar-kit .content .card .card-header img{
+  
+    width: 100%;
+    height: 100%;
+}
+.solar-kit .content .card .card-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 20px;
+    
+}
+.solar-kit .content .card .card-body h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #101828;
+    
+}
+.solar-kit .content .card .card-body p{
+
+    font-weight: 400;
+    line-height: 24px;
+    color: #475467;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
+.solar-kit .content .card .card-body .card-button{
+    color: #3CAB90;
+    text-transform: capitalize;
+    margin-right: 8px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    width: 141px;
+
+}
+.solar-kit .content .card .card-body .card-button i{
+  width: 20px;
+  height: 20px;
+
+}
+@media screen and (max-width:992px){
+    .solar-kit .head{
+        width:  80vw;
+    }
+    .solar-kit .content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:576px){
+    .solar-kit .head h4{
+        font-size: 32px;
+    }
+}
+/*CTA section  styles*/
+.cta{
+    background-image: url('assets/cta.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height:505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cta .cta-box {
+    width:858px;
+    padding: 44px;
+    border-radius: 12px;
+    color: white;
+    backdrop-filter: blur(24px);
+    background: #00000091;
+}
+.cta .cta-box h6{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom:32px ;
+}
+.cta .cta-box p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+@media screen and (max-width:992px){
+    .cta .cta-box {
+        width:85vw;
+        padding: 40px;
+        margin: 95px 0px;
+    }
+    .cta .cta-box h6{
+        font-size: 37px;
+        line-height: 50.83px;
+        margin-bottom:32px ;
+    }
+    .cta .cta-box p{
+        font-size: 19px;
+        line-height: 28px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:576px){
+    .cta .cta-box {
+        width:90vw;
+        padding: 20px;
+        margin: 95px 0px;
+    }
+    .cta .cta-box h6{
+        font-size: 24px;
+        line-height: 35.83px;
+        margin-bottom:25px ;
+    }
+    .cta .cta-box p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+/*  energy section  styles*/
+.energy{
+    padding: 80px 0;
+    background: #FFBB1C0D;
+}
+.energy .grid-layout{
+    grid-template-columns: minmax(200px, 4fr) minmax(200px, 8fr);
+    display: grid;
+    gap: 32px;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.energy .grid-layout .energy-header h6{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    margin: 24px 0;
+    color: #101828;
+}
+.energy .grid-layout .energy-header p{
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #475467;
+}
+.energy .grid-layout .energy-cards{
+ 
+    display: grid;
+    grid-template-columns: minmax(220px, 6fr) minmax(220px, 6fr);
+    gap: 32px;
+   
+}
+.energy .grid-layout .energy-cards .card{
+
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background: #3CAB900D;
+    
+    border: 1px solid #3CAB90;
+    box-shadow: 0px 4px 30px 0px #0000000D;
+
+}
+.energy .grid-layout .energy-cards .card .card-header{
+ 
+    height: 106px;
+    background: #3CAB9026;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width:358.67px ; */
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+.energy .grid-layout .energy-cards .card .card-header img{
+  
+    width: 225px;
+    height: 49px;
+    mix-blend-mode: luminosity;
+
+
+}
+.energy .grid-layout .energy-cards .card .card-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 20px;
+    flex-grow: 1;
+    margin-top: 32px;
+  
+    justify-content: space-between;
+    
+}
+.energy .grid-layout .energy-cards .card .card-body h5{
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #101828;
+ 
+    
+    
+}
+.energy .grid-layout .energy-cards .card .card-body p{
+
+    font-weight: 400;
+    line-height: 24px;
+    color: #475467;
+    font-size: 16px;
+
+    
+}
+.energy .grid-layout .energy-cards .card .card-body .card-button{
+    color: #3CAB90;
+    text-transform: capitalize;
+    margin-right: 8px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    width: 141px;
+
+}
+.energy .grid-layout .energy-cards .card .card-body .card-button i{
+  width: 20px;
+  height: 20px;
+
+}
+@media screen and (max-width:992px){
+  
+    .energy .grid-layout .energy-header h6{
+        font-size: 32px;
+        line-height: 45.83px;
+    }
+    .energy .grid-layout .energy-cards{
+   
+        grid-template-columns: 1fr;
+        gap: 32px;
+       
+    }
+    .energy .grid-layout .energy-cards .card{
+ 
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        border: 1px;
+        background: #3CAB900D;
+    
+        border: 1px solid #3CAB90;
+        box-shadow: 0px 4px 30px 0px #0000000D;
+    
+    }
+}
+@media screen and (max-width:576px){
+    .energy .grid-layout{
+   
+        grid-template-columns: 1fr;
+      
+    }
+    .energy .grid-layout .energy-cards .card{
+        padding: 15px;
+        min-width: 100px !important;
+     
+    }
+    .energy .grid-layout .energy-cards .card .card-header{
+        height: 106px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .energy .grid-layout .energy-cards .card .card-header img{
+        width:100%;
+        height: 49px;
+        mix-blend-mode: luminosity
+    
+    }
+}
+
+
+
+/*  Our values  styles*/
+.values{
+    padding: 80px 0;
+}
+.values .head{
+    text-align: center;
+}
+.values .head h6{
+
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    color: #101828;
+
+}
+.values .head p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color:#475467;
+     margin-top: 28px;
+}
+
+.values .grid-layout{
+   
+    display: grid;
+    gap: 32px;
+    margin-top: 32px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.values .grid-layout .card{
+
+    min-height: 420px;
+    padding: 32px;
+    gap: 20px;
+    border-radius: 12px;
+    border: 1px solid #3CAB90;
+    background: #3CAB900D;
+ 
+}
+.values .grid-layout .card-body {
+    margin: 20px 0px;
+}
+.values .grid-layout .card  .card-body h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #101828;
+}
+.values .grid-layout .card .card-body p{
+    margin: 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475467;
+
+}
+@media screen and (max-width:992px){
+    .values .grid-layout{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:576px){
+    .values .grid-layout{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/*  reviews styles*/
+.reviews{
+    padding: 80px 0;
+}
+.reviews .flex-layout{
+    display: flex;
+    gap: 32px;
+}
+.reviews .flex-layout .reviews-info{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.reviews .flex-layout .reviews-info img{
+    width: 58.33px;
+    height: 48px;
+
+
+}
+.reviews .flex-layout .reviews-info h6{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #1C1C1C;
+    
+}
+.reviews .flex-layout .reviews-info p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.reviews .flex-layout .reviews-slider{
+    padding: 40px;
+    background: #3CAB900F;
+    border-radius: 24px;
+    min-width: 708px;
+    
+}
+.reviews .flex-layout .reviews-slider .slider-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews .flex-layout .reviews-slider .slider-header h6{
+  
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3CAB90;
+    
+    line-height: 20.16px;
+
+    
+}
+.reviews .flex-layout .reviews-slider .slider-header  .dots.active{
+    width: 8px;
+    height: 8px;
+    background: #6B6B6B;
+    border-radius: 50%;
+}
+.reviews .flex-layout .reviews-slider .slider-header div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.reviews .flex-layout .reviews-slider .slider-header div .dots{
+    width: 8px;
+    height: 8px;
+    background: #D9D9D9;
+    border-radius: 50%;
+}
+
+.reviews .flex-layout .reviews-slider h5{
+    margin-top: 52px;
+    margin-bottom: 87px;
+    /* width: 518px; */
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+
+
+}
+.reviews .flex-layout .reviews-slider .slider-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+ 
+}
+.reviews .flex-layout .reviews-slider .slider-footer .slider-member{
+    display: flex;
+    align-items: center;
+    gap:8px ;
+}
+.reviews .flex-layout .reviews-slider .slider-footer .slider-member h6{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    color: #1C1C1C;
+}
+.reviews .flex-layout .reviews-slider .slider-footer .slider-member p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    margin-top: 8px;
+    color: #1C1C1C;
+    
+    
+}
+.reviews .flex-layout .reviews-slider .slider-footer .slider-buttons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.reviews .flex-layout .reviews-slider .slider-footer .slider-buttons button{
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 50%;
+
+    border: 1px solid #1C1C1C
+}
+.reviews .flex-layout .reviews-slider .slider-footer .slider-buttons button i{
+    font-size: 16px
+}
+@media screen and (max-width:992px){
+    .reviews .flex-layout{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .reviews .flex-layout .reviews-info h6{
+        font-size: 38px;
+        
+    }
+    .reviews .flex-layout .reviews-slider{
+        padding: 40px;
+        background: #3CAB900F;
+        border-radius: 24px;
+        min-width: 100%;
+        
+    }
+}
+@media screen and (max-width:576px){
+    .reviews .flex-layout .reviews-info{
+        min-width: 100%;
+    }
+    .reviews .flex-layout .reviews-info h6{
+        font-size: 32px;
+    }
+    .reviews .flex-layout .reviews-slider h5{
+        margin-top: 52px;
+        font-size: 19px;
+    }
+}
+/*  footer styles*/
+footer{
+    background: #283646;
+    padding: 80px 0px;
+
+}
+footer .grid-layout
+{
+    color: white;
+    display: grid;
+   
+    grid-template-columns: repeat(2,1fr);
+}
+footer .grid-layout .menu .menu-items{
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .grid-layout .subscribe{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+footer .grid-layout .subscribe h6{
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30px;
+
+
+}
+footer .grid-layout  .subscribe .input-layout{
+    position: relative;
+   
+    margin-top: 10px;
+}
+footer .grid-layout  .subscribe input
+{
+    width: 406px;
+    padding: 20px 0px 20px 20px;
+    border-radius: 38px;
+    border: 1px solid #B3BDC7;
+    background: #FFFFFF17;
+
+} 
+footer .grid-layout  .subscribe input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30000001192092896px;
+    color: #92989F;
+}
+footer .grid-layout  .subscribe button
+{
+    padding: 12px 34px ;
+    border-radius: 109px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30000001192092896px;
+    border: none;
+    color:  #FFFFFF;
+    background: #FFBB1C;
+
+}
+footer .horizontal-line{
+   width: 100%;
+    height: 2px;
+    margin: 54px 0px;
+    border: 1px solid #71777D
+
+}
+footer .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #92989F;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+}
+footer .footer-nav span:not(:first-child){
+    padding: 0px  24px;
+    border-right: 1px solid #92989F;
+}
+footer .footer-nav span:first-child{
+    padding-right: 24px;
+    border-right: 1px solid #92989F;
+}
+@media screen and (max-width:992px){
+    footer .grid-layout
+    {
+     
+        gap: 24px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer .grid-layout .subscribe{
+        align-self: flex-end;
+        justify-self: flex-start;
+    }
+}
+@media screen and (max-width:576px){
+    footer .grid-layout .menu .menu-items{
+  
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        gap: 24px;
+      
+    }
+    footer .footer-nav {
+       
+        flex-direction: column;
+        align-items: self-start;
+   
+     
+        gap: 24px;
+        
+    }
+    .flex-col{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+       
+    }
+    footer .footer-nav span:not(:first-child){
+        padding: 0px  24px;
+        border-left: 1px solid #92989F;
+        border-right: none;
+    }
+    footer .footer-nav span:first-child{
+        padding: 0px  24px;
+        border-left: 1px solid #92989F;
+        border-right: none;
+    }
+    
+    footer .grid-layout  .subscribe input
+    {
+        width: 100%;
+        padding: 20px 0px 20px 10px;
+  
+    } 
+    footer .grid-layout  .subscribe input::placeholder{
+        font-size: 14px;
+    }
+    footer .grid-layout  .subscribe button
+    {
+        padding: 6px 16px ;
+
+    
+    }
+
+    
+}
